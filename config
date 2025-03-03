@@ -1,5 +1,5 @@
 //2024/11/2：openssh更新，出现了no matching host key type found. port:22. Their offer: ssh-rsa的问题 原因：openssh更新不支持老版本的ssh
-解决方案：在C:\Users\86137\.ssh 中 新建config文件，添加如下代码：
+//解决方案：在C:\Users\86137\.ssh 中 新建config文件，添加如下代码：
 Host 192.168.31.1
 	HostKeyAlgorithms +ssh-rsa
 	PubkeyAcceptedKeyTypes +ssh-rsa
